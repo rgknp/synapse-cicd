@@ -19,7 +19,7 @@ jobs:
       ARTIFACT_NAME: build
       ENVIRONMENT_PREFIX: dev
       PROFILE_PATH: profiles
-      RESOURCE_GROUP: Analytics.DataPlatform.Group
+      RESOURCE_GROUP: synapse-cicd
 
     steps:
       - uses: actions/checkout@v2
