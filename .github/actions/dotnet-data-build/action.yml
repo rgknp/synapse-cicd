@@ -22,12 +22,12 @@ runs:
       shell: bash
       run: |
         if ! type dotnet > /dev/null; then
-          echo "::debug::dotnet is not available. Installing dotnet 5."
+          echo "::debug::dotnet is not available. Installing dotnet 6."
 
           sudo apt-get update; \
             sudo apt-get install -y apt-transport-https && \
             sudo apt-get update && \
-            sudo apt-get install -y dotnet-sdk-5.0
+            sudo apt-get install -y dotnet-sdk-6.0
         else
           echo "::debug::dotnet is already installed."
         fi
